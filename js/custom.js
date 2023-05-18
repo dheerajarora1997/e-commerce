@@ -890,7 +890,7 @@ $(document).ready(function() {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["aspetur autodit autfugit","aliquam quaerat voluptatem","magni dolores eosquies","voluptas nulla pariatur","aliquam quat voluptatem","voluptas sit aspernatur","similique suntin culpaqui","suscipit laboriosam nisi","abc"];
+var countries = ["","aliquam quaerat voluptatem","magni dolores eosquies","voluptas nulla pariatur","aliquam quat voluptatem","voluptas sit aspernatur","similique suntin culpaqui","suscipit laboriosam nisi","abc"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -1074,8 +1074,8 @@ $(window).resize(function() {
 var max_link = 4;
 var items = $('.navbar.navbar-full .navbar-nav > .nav-item');
 var surplus = items.slice(max_link, items.length);
-surplus.wrapAll('<li class="more_menu nav-item dropdown"><ul class="menu-dropdown cat-drop-menu">');
-$('.more_menu').prepend('<a href="#" class="nav-link dropdown-toggle text-uppercase">More</a>');
+// surplus.wrapAll('<li class="more_menu nav-item dropdown"><ul class="menu-dropdown cat-drop-menu">');
+// $('.more_menu').prepend('<a href="#" class="nav-link dropdown-toggle text-uppercase">More</a>');
 
 function header() {
     if ($(window).width() > 1199) {

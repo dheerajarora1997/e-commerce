@@ -1,3 +1,4 @@
+@import './variables';
 .btn-rounded {
     border-radius: 25px;
 }
@@ -1074,16 +1075,11 @@
         }
 	.footer-column{
 		padding:50px 15px;
-		@media (max-width: 991px){
-			max-width:100%;
-			flex:0 0 100%;
-			padding:0;
-		}
 		.title{
 			a{
 				@media (max-width: 991px){
 					padding:5px 15px;
-					font-size:14px;
+					font-size:22px;
 				}
 			}
 		}
@@ -1829,7 +1825,7 @@ background: #ffffff url('../img/banner/ajax-loader.gif') no-repeat scroll center
 
 
 a{
-	color:$gray;
+	color:$border-color;
 }
 a{
 	&:hover{

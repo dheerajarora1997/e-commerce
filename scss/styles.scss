@@ -167,7 +167,7 @@ body{
 	line-height:20px;
 	font-size:13px;
 	font-family:$primary-font;
-	color:$gray;
+	color:$border-color;
 }
 @-moz-keyframes fixedmenu {
     0% {
@@ -190,7 +190,7 @@ body{
 	width:100%;
 		&.header-default{
 			@media (min-width: 992px){
-				min-height:233px;
+				// min-height:233px;
 			}
 		}
 		.header-main-sticky{
@@ -207,7 +207,7 @@ body{
 				top: 0;
 				width: 100%;
 				z-index: 999;
-				.header-nav{
+				.header-nav d-none{
 					display:none;
 				}
 				
@@ -257,7 +257,7 @@ body{
 				}
 			}
 		}
-	.header-nav{
+	.header-nav d-none{
 		float:left;
 		width:100%;
 		background:$gray-bg;
@@ -339,7 +339,7 @@ body{
 		border-bottom:1px solid $border-color;
 	}
         .header-left{
-            padding: 48px 0;
+            padding: 38px 0;
 			@media (max-width: 991px){
 				width:100%;
 				border-top:1px solid $border-color;
@@ -2754,18 +2754,7 @@ body{
 		}
 	}
 	.page-footer{
-		&.footer-default{
-			.footer-column{
-				-ms-flex: 0 0 25%;
-				flex: 0 0 25%;
-				max-width: 25%;
-				@media (max-width: 991px){
-					-ms-flex: 0 0 100%;
-					flex: 0 0 100%;
-					max-width: 100%;
-				}
-			}
-		}
+
 	}
 	.slider-wrapper{
 		.slider{
@@ -2869,7 +2858,7 @@ body{
 
 .layout4{
 	.header-area{
-		.header-nav{
+		.header-nav d-none{
 			background:$black;
 		}
 		.header-main-sticky{
@@ -3253,14 +3242,7 @@ body{
 	.page-footer{
 		&.footer-default{
 			.footer-column{
-				-ms-flex: 0 0 25%;
-				flex: 0 0 25%;
-				max-width: 25%;
-				@media (max-width: 991px){
-					-ms-flex: 0 0 100%;
-					flex: 0 0 100%;
-					max-width: 100%;
-				}
+
 			}
 		}
 	}
